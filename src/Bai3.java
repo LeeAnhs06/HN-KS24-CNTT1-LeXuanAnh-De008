@@ -13,6 +13,14 @@ public class Bai3 {
             return;
         }
         Stack<Integer> stack = new Stack<>();
-        
+        while (n > 0) {
+            stack.push(n % 2);
+            n /= 2;
+        }
+        System.out.print("Số nhị phân: ");
+        while (!stack.isEmpty()) {
+            System.out.print(stack.pop());
+        }
+
     }
 }
